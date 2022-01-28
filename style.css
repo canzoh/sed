@@ -1,0 +1,349 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), url("/fonts/ptsans-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans"), url("/fonts/ptsans-700.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.real-sity__description,
+p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  color: #333333;
+}
+.real-sity__description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 26px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #e5e5e5;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 5px 7px 2px rgba(51, 51, 51, 0.3);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/*HEADER*/
+.header {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 65px;
+  max-width: 1200px;
+}
+.nav {
+  display: flex;
+}
+.btn {
+  display: block;
+  background-color: #756257;
+  padding: 10px 30px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn__header {
+  margin: 14px 70px 14px 0;
+}
+
+.nav {
+  margin-left: 70px;
+}
+.nav__li {
+  margin-right: 30px;
+}
+.nav__li a.active {
+  border-bottom: 2px solid #756257;
+  padding-bottom: 20px;
+}
+.nav__li a {
+  color: black;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+}
+.header__search--heart {
+  margin-left: auto;
+}
+.header__heart {
+  margin: 0 20px;
+}
+
+.logo {
+  position: sticky;
+  margin: 0 auto;
+  max-height: 70px;
+}
+/*Секция Welcome*/
+.welcome {
+  grid-column: 1/4;
+  min-height: 485px;
+  background-image: url("/img/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.welcome__head {
+  max-width: 458px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.welcome__head--svg {
+  display: block;
+  margin: 0 auto;
+}
+.welcome__svg {
+  margin-bottom: 10px;
+}
+
+.welcome-sedona__svg {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.welcome__divider {
+  grid-column: 1/4;
+  position: relative;
+  top: -57px;
+  background-image: url(/img/divider.png);
+  height: 57px;
+  background-repeat: no-repeat;
+}
+.welcome__divider--text {
+  grid-column: 1/4;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 0 60px 0;
+}
+.welcome__divider--text h2 {
+  margin-bottom: 23px;
+}
+.real-sity {
+  background-color: #83b3d3;
+}
+.real__sity {
+  grid-column: 1/2;
+}
+.real-sity__text {
+  padding: 80px;
+}
+.real-sity__text h3 {
+  margin-bottom: 25px;
+}
+.real-sity__text--n {
+  margin-bottom: 25px;
+}
+.real-sity__img--photo-1 {
+  grid-column: 2/4;
+  background-image: url(/img/photo-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.real-sity_home {
+  grid-column: 1/2;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.real-sity__food {
+  grid-column: 2/3;
+  background-color: #ffffff;
+}
+.real-sity__suvenir {
+  grid-column: 3/4;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.real-sity__icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 23px;
+}
+.text-white h3,
+.text-white h2,
+.text-white p {
+  color: #ffffff;
+}
+.real-sity__text--bridge {
+  grid-column: 3/4;
+}
+.real-sity__img--photo-2 {
+  grid-column: 1/3;
+  background-image: url(/img/photo-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.real-sity__text--place {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.real-sity__text--road {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.real-sity__text--tourist {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.interst,
+.sign {
+  grid-column: 1/4;
+}
+.sign {
+  background-image: url(/img/background-sign-form.jpg);
+  padding-bottom: 90px;
+}
+.interst__text,
+.sign__text {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 90px 30px;
+}
+.interst__text h2,
+.sign__text h2 {
+  margin-bottom: 20px;
+}
+.interst__btn {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-top: 73px;
+}
+.sign__text {
+  padding-bottom: 30px;
+}
+
+.sign__text p {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.sign__form {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.button {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  /* or 130% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  /* basic/white */
+  color: #ffffff;
+  padding: 16px 34px;
+  background: #83b3d3;
+  border-radius: 0px 10px 10px 0px;
+  border: 0;
+}
+
+.sign__form--email {
+  width: 600px;
+  height: 60px;
+  background-color: #f2f2f2;
+  border-radius: 10px 0px 0px 10px;
+  padding: 0 22px;
+
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+
+  border: 0;
+}
+.footer {
+  padding: 30px 0;
+}
+
+.footer-icon {
+  grid-column: 1/2;
+  margin-top: auto;
+}
+.footer-number a {
+  grid-column: 2/3;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+  /* or 100% */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  /* basic/black */
+
+  color: #000000;
+}
+.footer-logo {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 70px;
+}
+.icon__list {
+  display: flex;
+  padding-left: 70px;
+  align-items: center;
+}
+.footer-logo__img {
+  background-repeat: no-repeat;
+}
+.icon__list li {
+  padding-right: 30px;
+}
